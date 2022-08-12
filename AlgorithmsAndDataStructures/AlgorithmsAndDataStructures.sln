@@ -3,7 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmsAndDataStructures", "AlgorithmsAndDataStructures\AlgorithmsAndDataStructures.csproj", "{E38C11B6-3AAA-41BA-BF4B-43118FE014E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms-DataStruct-ConsoleApp", "AlgorithmsAndDataStructures\Algorithms-DataStruct-ConsoleApp.csproj", "{E38C11B6-3AAA-41BA-BF4B-43118FE014E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7344082C-E2AA-4ADE-93D9-F6A813FC12AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{192CFE87-4B08-414B-8E39-E3D9A817DBF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms-Lib", "Algorithms\Algorithms-Lib.csproj", "{15A02A61-7715-46AD-AFF7-0A92BF808975}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures-Lib", "DataStructures\DataStructures-Lib.csproj", "{464F6CDD-4D77-4656-AAF4-10FB13266824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms-Lib.Tests", "AlgorithmsTests\Algorithms-Lib.Tests.csproj", "{831D92DA-7B78-4413-859A-63FD9B0499F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures-Lib.Tests", "DataStructuresTests\DataStructures-Lib.Tests.csproj", "{E3ABE038-F559-4982-9DCB-813914E99E8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms-ConsoleApp", "Algorithms-CSharp-Course\Algorithms-CSharp-Course\Algorithms-ConsoleApp.csproj", "{B28A2959-DAEC-4491-857A-8386DE52CF00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms-DataStruct-Lib", "Algorithms-CSharp-Course\Algorithms-DataStruct-Lib\Algorithms-DataStruct-Lib.csproj", "{F858CD7B-8523-48B7-B87A-486886BBDACA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms-DataStruct-Lib.Tests", "Algorithms-CSharp-Course\NUnit_Tests\Algorithms-DataStruct-Lib.Tests.csproj", "{4008237D-CB70-42FB-8CA0-1839001B1438}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "course", "course", "{CC93B76E-3AC1-456E-B1CF-57FD7C26AAEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +35,47 @@ Global
 		{E38C11B6-3AAA-41BA-BF4B-43118FE014E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E38C11B6-3AAA-41BA-BF4B-43118FE014E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E38C11B6-3AAA-41BA-BF4B-43118FE014E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15A02A61-7715-46AD-AFF7-0A92BF808975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A02A61-7715-46AD-AFF7-0A92BF808975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A02A61-7715-46AD-AFF7-0A92BF808975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A02A61-7715-46AD-AFF7-0A92BF808975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{464F6CDD-4D77-4656-AAF4-10FB13266824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464F6CDD-4D77-4656-AAF4-10FB13266824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464F6CDD-4D77-4656-AAF4-10FB13266824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464F6CDD-4D77-4656-AAF4-10FB13266824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{831D92DA-7B78-4413-859A-63FD9B0499F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{831D92DA-7B78-4413-859A-63FD9B0499F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{831D92DA-7B78-4413-859A-63FD9B0499F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{831D92DA-7B78-4413-859A-63FD9B0499F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3ABE038-F559-4982-9DCB-813914E99E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3ABE038-F559-4982-9DCB-813914E99E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3ABE038-F559-4982-9DCB-813914E99E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3ABE038-F559-4982-9DCB-813914E99E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B28A2959-DAEC-4491-857A-8386DE52CF00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28A2959-DAEC-4491-857A-8386DE52CF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28A2959-DAEC-4491-857A-8386DE52CF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28A2959-DAEC-4491-857A-8386DE52CF00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F858CD7B-8523-48B7-B87A-486886BBDACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F858CD7B-8523-48B7-B87A-486886BBDACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F858CD7B-8523-48B7-B87A-486886BBDACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F858CD7B-8523-48B7-B87A-486886BBDACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4008237D-CB70-42FB-8CA0-1839001B1438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4008237D-CB70-42FB-8CA0-1839001B1438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4008237D-CB70-42FB-8CA0-1839001B1438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4008237D-CB70-42FB-8CA0-1839001B1438}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E38C11B6-3AAA-41BA-BF4B-43118FE014E3} = {7344082C-E2AA-4ADE-93D9-F6A813FC12AA}
+		{15A02A61-7715-46AD-AFF7-0A92BF808975} = {7344082C-E2AA-4ADE-93D9-F6A813FC12AA}
+		{464F6CDD-4D77-4656-AAF4-10FB13266824} = {7344082C-E2AA-4ADE-93D9-F6A813FC12AA}
+		{831D92DA-7B78-4413-859A-63FD9B0499F6} = {192CFE87-4B08-414B-8E39-E3D9A817DBF6}
+		{E3ABE038-F559-4982-9DCB-813914E99E8C} = {192CFE87-4B08-414B-8E39-E3D9A817DBF6}
+		{B28A2959-DAEC-4491-857A-8386DE52CF00} = {CC93B76E-3AC1-456E-B1CF-57FD7C26AAEB}
+		{F858CD7B-8523-48B7-B87A-486886BBDACA} = {CC93B76E-3AC1-456E-B1CF-57FD7C26AAEB}
+		{4008237D-CB70-42FB-8CA0-1839001B1438} = {CC93B76E-3AC1-456E-B1CF-57FD7C26AAEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ECAD9A40-C9D4-4FD2-944E-5D4E54B33723}
