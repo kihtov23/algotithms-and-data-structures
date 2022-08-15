@@ -18,5 +18,15 @@ namespace AlgorithmsTests
             //Assert
             CollectionAssert.IsOrdered(sortedArray);
         }
+
+        [Test]
+        public void SelectionSort_Returns_SortedArray()
+        {
+            //Act 
+            var sortedArray = Sorting.SelectionSort(new int[] { 6, 4, 7, 2 });
+
+            //Assert
+            CollectionAssert.IsOrdered(sortedArray);
+        }
     }
 }
