@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Algorithms\Algorithms-Lib.csproj" />
+    <ProjectReference Include="..\Algorithms\My-Algorithms-Lib.csproj" />
   </ItemGroup>
 
 </Project>
