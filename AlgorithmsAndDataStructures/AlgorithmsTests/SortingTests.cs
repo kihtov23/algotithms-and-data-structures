@@ -72,5 +72,11 @@ namespace AlgorithmsTests
         {
             RunTestsForSortingAlgorithms(Sorting.InsertionSort);
         }
+
+        [Test]
+        public void MergeSort_Returns_SortedArray()
+        {
+            RunTestsForSortingAlgorithms(Sorting.MergeSort);
+        }
     }
 }
