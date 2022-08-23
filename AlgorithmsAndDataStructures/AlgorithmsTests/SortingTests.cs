@@ -78,5 +78,11 @@ namespace AlgorithmsTests
         {
             RunTestsForSortingAlgorithms(Sorting.MergeSort);
         }
+
+        [Test]
+        public void QuickSort_Returns_SortedArray()
+        {
+            RunTestsForSortingAlgorithms(Sorting.MergeSort);
+        }
     }
 }
