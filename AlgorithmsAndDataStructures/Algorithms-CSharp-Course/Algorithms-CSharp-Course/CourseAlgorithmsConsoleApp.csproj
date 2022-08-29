@@ -15,7 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Algorithms-DataStruct-Lib\Course-Algorithms-DataStruct-Lib.csproj" />
+    <ProjectReference Include="..\Algorithms-DataStruct-Lib\CourseAlgorithmsDataStructLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
