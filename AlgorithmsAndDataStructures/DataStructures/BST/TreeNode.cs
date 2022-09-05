@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MyDataStructuresLib.BST
+﻿namespace MyDataStructuresLib.BST
 {
-    public class Node<T> where T : IComparable<T>
+    public class TreeNode<T> where T : IComparable<T>
     {
         public T Value { get; set; }
-        public Node<T> Left { get; private set; }
-        public Node<T> Right { get; private set; }
+        public TreeNode<T> Left { get; private set; }
+        public TreeNode<T> Right { get; private set; }
 
-        public Node(T value)
+        public TreeNode(T value)
         {
             Value = value;
         }
@@ -28,7 +22,7 @@ namespace MyDataStructuresLib.BST
             {
                 if (Left == null)
                 {
-                    Left = new Node<T>(newValue);
+                    Left = new TreeNode<T>(newValue);
                 }
                 else
                 {
@@ -39,7 +33,7 @@ namespace MyDataStructuresLib.BST
             {
                 if (Right == null)
                 {
-                    Right = new Node<T>(newValue);
+                    Right = new TreeNode<T>(newValue);
                 }
                 else
                 {
@@ -48,7 +42,7 @@ namespace MyDataStructuresLib.BST
             }
         }
 
-        public Node<T> Get(T value)
+        public TreeNode<T> Get(T value)
         {
             int compare = Value.CompareTo(value);
             if (compare == 0)
@@ -70,6 +64,24 @@ namespace MyDataStructuresLib.BST
             return null;
         }
 
+        public IEnumerable<T> TraversePreOrder()
+        {
+            var list = new List<T>();
+            TraversePreOrder(list);
+            return list;
+        }
+
+        private void TraversePreOrder(List<T> list)
+        {
+            list.Add(Value);
+
+            if (Left != null)
+                Left.TraversePreOrder(list);
+
+            if (Right != null)
+                Right.TraversePreOrder(list);
+        }
+
         public IEnumerable<T> TraverseInOrder()
         {
             var list = new List<T>();
@@ -87,6 +99,25 @@ namespace MyDataStructuresLib.BST
 
             if(Right != null) 
                 Right.TraverseInOrder(list);
+        }
+
+        public IEnumerable<T> TraversePostOrder()
+        {
+            var list = new List<T>();
+
+            TraversePostOrder(list);
+            return list;
+        }
+
+        private void TraversePostOrder(List<T> list)
+        {
+            if (Left != null)
+                Left.TraverseInOrder(list);
+
+            if (Right != null)
+                Right.TraverseInOrder(list);
+
+            list.Add(Value);
         }
 
         public T Min()
